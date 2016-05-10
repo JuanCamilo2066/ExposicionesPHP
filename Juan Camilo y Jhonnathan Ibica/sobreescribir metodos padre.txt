@@ -1,0 +1,15 @@
+ <?php
+    class Vehiculo {
+    public function bocinazo() {
+    return "HONK HONK!";
+    }
+    }
+    class Bicycle extends Vehiculo{
+    public function bocinazo(){
+    return "Pip Pip!";
+    }
+    }
+    $bicicleta = new Bicycle();
+    echo $bicicleta->bocinazo();
+
+    ?>

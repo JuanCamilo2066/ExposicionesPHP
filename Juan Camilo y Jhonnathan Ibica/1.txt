@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link type='text/css' rel='stylesheet' href='style.css'/>
+		<title>Más lanzamientos de monedas while y dowhile</title>
+	</head>
+	<body>
+	<p>Vamos a seguir lanzando una moneda hasta que el resultado sea cara.</p>
+	<?php
+	$conteoDeLanzamientos = 0;
+	do {
+		$lanzamiento = rand(0,1);
+		$conteoDeLanzamientos ++;
+		if ($lanzamiento){
+			echo "<div class=\"coin\">H</div>";
+		}
+		else {
+			echo "<div class=\"coin\">T</div>";
+		}
+	} while ($lanzamiento);
+	$verbo = "fueron";
+	$final = "lanzamientos";
+	if ($conteoDeLanzamientos == 1) {
+		$verbo = "fueron";
+		$final = "lanzamientos";
+	}
+	echo "<p> {$verbo} {$conteoDeLanzamientos} {$final}!</p>";
+	?>
+    </body>
+</html>

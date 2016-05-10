@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>foreach</title>
+  </head>
+  <body>
+    <h1>Lenguajes que podés aprender en Codecademy:</h1>
+    <div class="wrapper">
+      <ul>
+        <?php
+          $lenguajes = array("JavaScript",
+          "HTML/CSS", "PHP",
+          "Python", "Ruby");
+        
+          foreach ($lenguajes as $lenguaje) {
+              echo "<li>$lenguaje</li>";
+          }
+        
+          unset($lenguajes);
+        ?>
+      </ul>
+    </div>
+  </body>
+</html>
